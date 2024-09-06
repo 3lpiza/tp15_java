@@ -14,6 +14,11 @@ class CuentaBancariaTest {
 	        long saldo = cuenta.saldo("ARS");
 	        assertEquals(500L, saldo);
 	    }
+	 @Test
+	 public void testExtraccionMayorAlSaldo() {
+	     CuentaBancaria cuenta = new CuentaBancaria("ARS", 1000L);
+	     cuenta.extraer(1500L);
+	 }
 	 
 	 //TODO Test cuenta USD deposito
 
